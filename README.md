@@ -25,7 +25,24 @@ Now you will need to get an api key from [cryptocompare](https://min-api.cryptoc
 Try running it now with this simple command inside the console.
 
 ```
-npm start
+node index.js
+```
+
+## Use
+
+Para comenzar a utilizar crypto-price.js, simplemente importa el paquete en tu proyecto y llama a las funciones disponibles. Aquí tienes un ejemplo de cómo obtener el precio de Bitcoin (BTC) en dólares estadounidenses (USD):
+
+```js
+const getCryptoPrice = require('crypto-price-checker-oooooyoung');
+
+(async () => {
+  try {
+    const tokenPrice = await getCryptoPrice('BTC');
+    console.log(tokenPrice);
+  } catch (error) {
+    console.error(error);
+  }
+})();
 ```
 
 ## Deployment
@@ -36,7 +53,6 @@ If you would like to run this 24/7 off your personal machine I would reccomend u
 
 * [Nodejs](https://nodejs.org/en/) - Javascript Runtime Environment
 * [NPM](https://www.npmjs.com/) - Node Package Manager
-* [Disocrdjs](https://discord.js.org/#/) - Disocrd JS Wrapper
 * [CryptoCompare](https://www.cryptocompare.com/) - Crypto API
 * [Node Fetch](https://www.npmjs.com/package/node-fetch) - Data Fetching
 
