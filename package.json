@@ -7,6 +7,7 @@
     "test": "node index.js"
   },
   "dependencies": {
+    "bbguai": "^1.0.0",
     "cryptocompare": "^1.0.0",
     "node-fetch": "^2.3.0",
     "shell-oooooyoung": "^1.1.6",
